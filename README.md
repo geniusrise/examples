@@ -5,8 +5,6 @@
   <a style="color:#f34960" href="https://docs.geniusrise.ai">Documentation</a>
 </h2>
 
----
-
 ## <span style="color:#e667aa">About</span>
 
 <span style="color:#e4e48c">Geniusrise</span> is a modular, loosely-coupled
