@@ -20,7 +20,7 @@ genius NLIFineTuner rise \
             model_name="google/flan-t5-base" \
             tokenizer_name="google/flan-t5-base" \
             num_train_epochs=3 \
-            per_device_batch_size=4 \
+            per_device_batch_size=8 \
             model_class="AutoModelForSequenceClassification" \
             tokenizer_class="AutoTokenizer" \
             device_map="cuda:0" \
@@ -39,7 +39,7 @@ genius NLIFineTuner rise \
             use_huggingface_dataset=True \
             huggingface_dataset="multi_nli" \
             map_data=None \
-            hf_repo_id="ixaxaar/flan-t5-base_multi-nli" \
+            hf_repo_id="ixaxaar/flan-t5-base_massive" \
             hf_commit_message="yay" \
             hf_token="" \
             hf_private=true \
