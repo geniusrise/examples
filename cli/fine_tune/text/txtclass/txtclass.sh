@@ -41,7 +41,7 @@ genius TextClassificationFineTuner rise \
             map_data=None \
             hf_repo_id="ixaxaar/flan-t5-base_massive" \
             hf_commit_message="yay" \
-            hf_token="" \
+            hf_token="***REMOVED***" \
             hf_private=true \
             hf_create_pr=False \
             notification_email="russi@geniusrise.ai" \
