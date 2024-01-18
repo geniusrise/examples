@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-genius NLIFineTuner rise \
+genius TextClassificationFineTuner rise \
     batch \
         --input_s3_bucket geniusrise-test \
         --input_s3_folder input/txtclass \
@@ -37,7 +37,7 @@ genius NLIFineTuner rise \
             metric_for_best_model=None \
             greater_is_better=None \
             use_huggingface_dataset=True \
-            huggingface_dataset="multi_nli" \
+            huggingface_dataset="AmazonScience/massive" \
             map_data=None \
             hf_repo_id="ixaxaar/flan-t5-base_massive" \
             hf_commit_message="yay" \
@@ -46,4 +46,5 @@ genius NLIFineTuner rise \
             hf_create_pr=False \
             notification_email="russi@geniusrise.ai" \
             compile=False \
-            learning_rate=5e-5
+            learning_rate=5e-5 \
+            map_data="lambda d: {'label': d['intent'], 'text': d['utt']}"
