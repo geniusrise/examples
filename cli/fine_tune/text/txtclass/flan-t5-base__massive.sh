@@ -31,7 +31,7 @@ genius TextClassificationFineTuner rise \
             use_trl=False \
             accelerate_no_split_module_classes="[]" \
             evaluate=False \
-            save_steps=5000 \
+            save_steps=15000 \
             save_total_limit=None \
             load_best_model_at_end=False \
             metric_for_best_model=None \
@@ -46,5 +46,5 @@ genius TextClassificationFineTuner rise \
             hf_create_pr=False \
             notification_email="russi@geniusrise.ai" \
             compile=False \
-            learning_rate=5e-5 \
+            learning_rate=1e-4 \
             map_data="lambda d: {'label': d['intent'], 'text': d['utt']}"
