@@ -18,7 +18,7 @@ genius SpeechToTextAPI rise \
     listen \
         --args \
             model_name="openai/whisper-large-v3" \
-            model_class="AutoModelForSpeechSeq2Seq" \
+            model_class="WhisperForConditionalGeneration" \
             processor_class="AutoProcessor" \
             use_cuda=True \
             precision="float32" \
