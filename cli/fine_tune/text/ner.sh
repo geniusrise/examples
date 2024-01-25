@@ -17,8 +17,8 @@ genius NamedEntityRecognitionFineTuner rise \
     --id lol \
     fine_tune \
         --args \
-            model_name="microsoft/phi-2" \
-            tokenizer_name="microsoft/phi-2" \
+            model_name="bert-large-uncased" \
+            tokenizer_name="bert-large-uncased" \
             num_train_epochs=3 \
             per_device_batch_size=8 \
             model_class="AutoModelForTokenClassification" \
