@@ -37,14 +37,13 @@ genius NamedEntityRecognitionFineTuner rise \
             metric_for_best_model=None \
             greater_is_better=None \
             use_huggingface_dataset=True \
-            huggingface_dataset="DFKI-SLT/few-nerd" \
-            hf_repo_id="ixaxaar/flan-t5-base_few-nerd" \
+            huggingface_dataset="ncbi_disease" \
+            hf_repo_id="ixaxaar/bert-large-uncased-ncbi-disease-ner" \
             hf_commit_message="yay" \
             hf_token="" \
             hf_private=true \
             hf_create_pr=False \
             notification_email="russi@geniusrise.ai" \
             compile=False \
-            learning_rate=5e-5 \
-            map_data="lambda d: {'tokens': d['tokens'], 'ner_tags': d['fine_ner_tags']}"
+            learning_rate=5e-5
 

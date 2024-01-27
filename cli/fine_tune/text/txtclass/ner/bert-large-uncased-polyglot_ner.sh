@@ -40,11 +40,11 @@ genius NamedEntityRecognitionFineTuner rise \
             huggingface_dataset="polyglot_ner" \
             hf_repo_id="ixaxaar/flan-t5-base-polyglot_ner" \
             hf_commit_message="yay" \
-            hf_token="" \
+            hf_token="***REMOVED***" \
             hf_private=true \
             hf_create_pr=False \
             notification_email="russi@geniusrise.ai" \
             compile=False \
             learning_rate=5e-5 \
-            map_data="lambda d: {'tokens': d['words'], 'ner_tags': d['ner']}"
+            map_data="lambda d: {'tokens': d['tokens'], 'ner_tags': d['fine_ner_tags']}"
 
