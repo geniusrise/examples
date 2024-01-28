@@ -40,7 +40,7 @@ genius NamedEntityRecognitionFineTuner rise \
             huggingface_dataset="polyglot_ner" \
             hf_repo_id="ixaxaar/flan-t5-base-polyglot_ner" \
             hf_commit_message="yay" \
-            hf_token="***REMOVED***" \
+            hf_token="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" \
             hf_private=true \
             hf_create_pr=False \
             notification_email="russi@geniusrise.ai" \
