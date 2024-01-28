@@ -49,6 +49,6 @@ genius TextToSpeechAPI rise \
     -d '{
         "text": "Recurrent Neural Networks (RNNs) ke baare mein kuch jaadui hai. Main ab bhi yaad karta hoon jab maine apna pehla recurrent network train kiya tha Image Captioning ke liye. Training shuru karne ke kuch hi minutes mein, meri pehli baby model (jiska maine randomly hyperparameters choose kiye the) ne images ke bahut acche descriptions generate karne shuru kar diye jo almost samajh mein aane wale the. Kabhi kabhi aapki model kitni simple hai aur usse jo results aate hain unka ratio aapki expectations se bahut aage nikal jaata hai, aur yeh wohi waqt tha. Us waqt jo result aaya tha woh itna shocking tha kyunki common samajh yeh thi ki RNNs ko train karna mushkil hota hai (lekin zyada experience hone ke baad, maine bilkul ulta nateeja nikala). Ek saal aage badho: Main lagatar RNNs train kar raha hoon aur maine unki shakti aur mazbooti ko kayi baar dekha hai, phir bhi unke jaadui outputs mujhe hamesha entertain karte hain.",
         "output_type": "mp3",
-        "voice_preset": "v2/hi_speaker_3"
+        "voice_preset": "v2/hi_speaker_5"
     }' | jq -r '.audio_file' | base64 -d > output.mp3 && vlc output.mp3
 

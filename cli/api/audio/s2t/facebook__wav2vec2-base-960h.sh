@@ -33,7 +33,7 @@ genius SpeechToTextAPI rise \
             username="user" \
             password="password"
 
-(base64 -w 0 sample.mp3 | awk '{print "{\"audio_file\": \""$0"\", \"model_sampling_rate\": 16000, \"chunk_size\": 1600000}"}' > /tmp/payload.json)
+(base64 -w 0 long_sample.mp3 | awk '{print "{\"audio_file\": \""$0"\", \"model_sampling_rate\": 16000, \"chunk_size\": 1600000}"}' > /tmp/payload.json)
 curl -X POST http://localhost:3000/api/v1/transcribe \
     -H "Content-Type: application/json" \
     -u user:password \
