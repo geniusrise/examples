@@ -45,8 +45,3 @@ curl -X POST http://localhost:3000/api/v1/transcribe \
     -u user:password \
     -d @/tmp/payload.json | jq
 
-(base64 -w 0 sample.flac | awk '{print "{\"audio_file\": \""$0"\", \"model_sampling_rate\": 16000, \"chunk_length_s\": 60}"}' > /tmp/payload.json)
-curl -X POST http://localhost:3000/api/v1/asr_pipeline \
-    -H "Content-Type: application/json" \
-    -u user:password \
-    -d @/tmp/payload.json | jq
