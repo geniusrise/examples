@@ -33,4 +33,4 @@ genius TextToSpeechBulk rise \
             output_type="mp3" \
             voice_preset=0 \
             model_sampling_rate=16000 \
-            generation_tgt_lang="eng" \
+            generation_tgt_lang="eng"
