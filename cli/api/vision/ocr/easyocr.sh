@@ -17,11 +17,7 @@ genius ImageOCRAPI rise \
     listen \
         --args \
             model_name="easyocr" \
-            model_class="" \
-            processor_class="" \
             device_map="cuda:0" \
-            use_cuda=True \
-            precision="float" \
             endpoint="*" \
             port=3000 \
             cors_domain="http://localhost:3000" \
