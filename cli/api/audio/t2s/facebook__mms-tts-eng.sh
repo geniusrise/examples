@@ -14,10 +14,10 @@ genius TextToSpeechAPI rise \
         --postgres_password postgres \
         --postgres_database geniusrise\
         --postgres_table state \
-    --id facebook/mms-tts-hin \
+    --id facebook/mms-tts-eng \
     listen \
         --args \
-            model_name="facebook/mms-tts-hin" \
+            model_name="facebook/mms-tts-eng" \
             model_class="VitsModel" \
             processor_class="VitsTokenizer" \
             use_cuda=True \
