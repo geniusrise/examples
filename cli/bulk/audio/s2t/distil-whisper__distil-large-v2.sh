@@ -7,13 +7,7 @@ genius SpeechToTextBulk rise \
     batch \
         --output_s3_bucket geniusrise-test \
         --output_s3_folder audio-outputs \
-    postgres \
-        --postgres_host 127.0.0.1 \
-        --postgres_port 5432 \
-        --postgres_user postgres \
-        --postgres_password postgres \
-        --postgres_database geniusrise\
-        --postgres_table state \
+    none \
     --id distil-whisper/distil-large-v2 \
     transcribe \
         --args \

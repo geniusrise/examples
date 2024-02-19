@@ -7,13 +7,7 @@ genius InstructionBulk rise \
     batch \
         --output_s3_bucket geniusrise-test \
         --output_s3_folder output/chat \
-    postgres \
-        --postgres_host 127.0.0.1 \
-        --postgres_port 5432 \
-        --postgres_user postgres \
-        --postgres_password postgres \
-        --postgres_database geniusrise\
-        --postgres_table state \
+    none \
     --id mistralai/Mistral-7B-Instruct-v0.1 \
     perform \
         --args \

@@ -7,13 +7,7 @@ genius QABulk rise \
     batch \
         --output_s3_bucket geniusrise-test \
         --output_s3_folder output/qa-traditional \
-    postgres \
-        --postgres_host 127.0.0.1 \
-        --postgres_port 5432 \
-        --postgres_user postgres \
-        --postgres_password postgres \
-        --postgres_database geniusrise\
-        --postgres_table state \
+    none \
     --id distilbert-base-uncased-distilled-squad \
     answer_questions \
         --args \
@@ -36,13 +30,7 @@ genius QABulk rise \
     batch \
         --output_s3_bucket geniusrise-test \
         --output_s3_folder output/qa-table \
-    postgres \
-        --postgres_host 127.0.0.1 \
-        --postgres_port 5432 \
-        --postgres_user postgres \
-        --postgres_password postgres \
-        --postgres_database geniusrise\
-        --postgres_table state \
+    none \
     --id google/tapas-base-finetuned-wtq \
     answer_questions \
         --args \
@@ -65,13 +53,7 @@ genius QABulk rise \
     batch \
         --output_s3_bucket geniusrise-test \
         --output_s3_folder output/qa-table \
-    postgres \
-        --postgres_host 127.0.0.1 \
-        --postgres_port 5432 \
-        --postgres_user postgres \
-        --postgres_password postgres \
-        --postgres_database geniusrise\
-        --postgres_table state \
+    none \
     --id google/tapas-base-finetuned-sqa \
     answer_questions \
         --args \
@@ -94,13 +76,7 @@ genius QABulk rise \
     batch \
         --output_s3_bucket geniusrise-test \
         --output_s3_folder output/qa-table \
-    postgres \
-        --postgres_host 127.0.0.1 \
-        --postgres_port 5432 \
-        --postgres_user postgres \
-        --postgres_password postgres \
-        --postgres_database geniusrise\
-        --postgres_table state \
+    none \
     --id microsoft/tapex-large-finetuned-wtq \
     answer_questions \
         --args \

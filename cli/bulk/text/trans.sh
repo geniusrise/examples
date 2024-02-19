@@ -7,13 +7,7 @@ genius TranslationBulk rise \
     batch \
         --output_s3_bucket geniusrise-test \
         --output_s3_folder output/trans \
-    postgres \
-        --postgres_host 127.0.0.1 \
-        --postgres_port 5432 \
-        --postgres_user postgres \
-        --postgres_password postgres \
-        --postgres_database geniusrise\
-        --postgres_table state \
+    none \
     --id facebook/mbart-large-50-many-to-many-mmt \
     translate \
         --args \

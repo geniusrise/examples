@@ -2,11 +2,9 @@
 
 genius TextJupyterNotebook rise \
     batch \
-        --input_s3_bucket geniusrise-test \
-        --input_s3_folder none \
+            --input_folder ./input \
     batch \
-        --output_s3_bucket geniusrise-test \
-        --output_s3_folder none \
+            --output_folder ./output \
     postgres \
         --postgres_host 127.0.0.1 \
         --postgres_port 5432 \

@@ -7,13 +7,7 @@ genius TextClassificationBulk rise \
     batch \
         --output_s3_bucket geniusrise-test \
         --output_s3_folder output/txtclass \
-    postgres \
-        --postgres_host 127.0.0.1 \
-        --postgres_port 5432 \
-        --postgres_user postgres \
-        --postgres_password postgres \
-        --postgres_database geniusrise\
-        --postgres_table state \
+    none \
     --id cardiffnlp/twitter-roberta-base-hate-multiclass-latest \
     classify \
         --args \
@@ -36,13 +30,7 @@ genius TextClassificationBulk rise \
     batch \
         --output_s3_bucket geniusrise-prod-output \
         --output_s3_folder year=2023/month=12/day=299/ \
-    postgres \
-        --postgres_host 127.0.0.1 \
-        --postgres_port 5432 \
-        --postgres_user postgres \
-        --postgres_password postgres \
-        --postgres_database geniusrise\
-        --postgres_table state \
+    none \
     --id papluca/xlm-roberta-base-language-detection \
     classify \
         --args \
