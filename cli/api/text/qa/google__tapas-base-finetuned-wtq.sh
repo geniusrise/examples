@@ -26,6 +26,7 @@ genius QAAPI rise \
 
 /usr/bin/curl -X POST localhost:3000/api/v1/answer \
     -H "Content-Type: application/json" \
+    -u "user:password" \
     -d '{
       "data": [
           {"Name": "Alice", "Age": "30"},

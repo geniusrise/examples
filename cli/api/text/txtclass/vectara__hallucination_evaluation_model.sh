@@ -27,6 +27,7 @@ genius TextClassificationAPI rise \
 
 /usr/bin/curl -X POST localhost:3000/api/v1/classify \
     -H "Content-Type: application/json" \
+    -u "user:password" \
     -d '{
-        "text": "there are 3 capitals of france - paris, london"
+        "text": "A man walks into a bar and buys a drink [SEP] A bloke swigs alcohol at a pub"
     }' | jq

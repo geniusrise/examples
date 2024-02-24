@@ -26,6 +26,7 @@ genius QAAPI rise \
 
 /usr/bin/curl -X POST localhost:3000/api/v1/answer \
     -H "Content-Type: application/json" \
+    -u "user:password" \
     -d '{
       "data": {"Actors": ["Brad Pitt", "Leonardo Di Caprio", "George Clooney"], "Number of movies": ["87", "53", "69"]},
       "question": "how many movies does clooney have?"

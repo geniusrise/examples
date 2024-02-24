@@ -26,6 +26,7 @@ genius TextClassificationAPI rise \
 
 /usr/bin/curl -X POST localhost:3000/api/v1/classify \
     -H "Content-Type: application/json" \
+    -u "user:password" \
     -d '{
         "text": "hey i havent got my package yet where is it"
     }' | jq
