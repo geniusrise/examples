@@ -6,21 +6,16 @@ genius LanguageModelAPI rise \
     batch \
             --output_folder ./output \
     none \
-    --id mistralai/Mistral-7B-v0.1 \
     listen \
         --args \
-            model_name="mistralai/Mistral-7B-v0.1" \
+            model_name="TheBloke/Mistral-7B-v0.1-GGUF" \
             model_class="AutoModelForCausalLM" \
             tokenizer_class="AutoTokenizer" \
             use_cuda=True \
-            precision="bfloat16" \
-            quantization=0 \
-            device_map="auto" \
-            max_memory=None \
-            torchscript=False \
-            use_vllm=True \
-            vllm_enforce_eager=True \
-            vllm_max_model_len=1024 \
+            use_llama_cpp=True \
+            llama_cpp_filename="mistral-7b-v0.1.Q4_K_M.gguf" \
+            llama_cpp_n_gpu_layers=35 \
+            llama_cpp_n_ctx=32768 \
             concurrent_queries=False \
             endpoint="*" \
             port=3000 \
@@ -29,17 +24,14 @@ genius LanguageModelAPI rise \
             password="password"
 
 
-curl -v -X POST "http://localhost:3000/api/v1/complete_vllm" \
+curl -X POST "http://localhost:3000/api/v1/complete_llama_cpp" \
     -H "Content-Type: application/json" \
     -u "user:password" \
     -d '{
-        "messages": ["Whats the weather like in London?"],
+        "prompt": "Whats the weather like in London?",
         "temperature": 0.7,
-        "top_p": 1.0,
-        "n": 1,
+        "top_p": 0.95,
+        "top_k": 40,
         "max_tokens": 50,
-        "presence_penalty": 0.0,
-        "frequency_penalty": 0.0,
-        "user": "example_user"
+        "repeat_penalty": 1.1
     }'
-
