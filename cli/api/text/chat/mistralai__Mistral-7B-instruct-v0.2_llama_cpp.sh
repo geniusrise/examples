@@ -9,8 +9,6 @@ genius InstructionAPI rise \
     listen \
         --args \
             model_name="TheBloke/Mistral-7B-Instruct-v0.2-GGUF" \
-            model_class="AutoModelForCausalLM" \
-            tokenizer_class="AutoTokenizer" \
             use_cuda=True \
             use_llama_cpp=True \
             llama_cpp_filename="mistral-7b-instruct-v0.2.Q4_K_M.gguf" \

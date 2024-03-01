@@ -10,5 +10,8 @@ genius SpeechToTextBulk rise \
     none \
     transcribe \
         --args \
-            model_name="large-v2" \
-            use_whisper_cpp=True
+            model_name="large-v3" \
+            use_faster_whisper=True \
+            precision=float32 \
+            quantization=0 \
+            device_map="cuda:0"
